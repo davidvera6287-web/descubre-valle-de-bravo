@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Valle de Bravo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <button class="nav-btn activo" onclick="mostrar('nosotros', this)">Nosotros</button>
+    <button class="nav-btn" onclick="mostrar('taxi', this)">Taxi</button>
+    <button class="nav-btn" onclick="mostrar('contacto', this)">Contacto</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Visita Valle de Bravo</h1>
+</section>
+
+<div class="contenedor">
+
+  <!-- NOSOTROS -->
+  <div id="nosotros" class="card activo">
+    <h2>🌄 Nosotros</h2>
+    <p>
+      Disfruta Valle de Bravo: Tours y Aventura.<br><br>
+      Ofrecemos emocionantes tours a cascadas, miradores y mariposas monarca.<br><br>
+      Servicio cómodo y seguro para toda la república.
+    </p>
+    <button class="btn">Reservar Tour</button>
+  </div>
+
+  <!-- TAXI -->
+  <div id="taxi" class="card">
+    <h2>🚕 Taxi Seguro</h2>
+    <p>
+      Servicio 24 horas, viajes seguros.<br>
+      Viajes locales y nacionales.
+    </p>
+    <a href="tel:+5210000000000" class="btn">📞 Llamar Taxi</a>
+  </div>
+
+  <!-- CONTACTO -->
+  <div id="contacto" class="card">
+    <h2>📩 Contacto</h2>
+
+    <input type="text" placeholder="Nombre">
+    <input type="email" placeholder="Correo">
+    <textarea placeholder="Mensaje"></textarea>
+
+    <button class="btn">Enviar</button>
+
+    <p class="info"><strong>Gerardo Vera</strong></p>
+    <p class="info">Tel: +52 XXX XXX XXXX</p>
+    <p class="info">Correo: correo@ejemplo.com</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

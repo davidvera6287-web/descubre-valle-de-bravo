@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    color: white;
+  }
+  
+  /* NAV */
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .nav-btn{
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: transparent;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .nav-btn:hover{
+    background: #ffd700;
+    color: black;
+  }
+  
+  .nav-btn.activo{
+    background: #ffd700;
+    color: black;
+  }
+  
+  /* HERO PRO */
+  .hero{
+    height: 100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+      url("fondo.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1{
+    font-size: 65px;
+    color: #ffd700;
+    font-family: cursive;
+    text-shadow: 0 0 30px rgba(0,0,0,0.9);
+  }
+  
+  /* CONTENEDOR */
+  .contenedor{
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+  
+  /* CARDS */
+  .card{
+    display: none;
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    text-align: center;
+    animation: aparecer 0.5s ease;
+  }
+  
+  .card.activo{
+    display: block;
+  }
+  
+  .card h2{
+    color: #ffd700;
+    margin-bottom: 15px;
+  }
+  
+  /* BOTONES */
+  .btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, orange, gold);
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover{
+    transform: scale(1.1);
+  }
+  
+  /* INPUTS */
+  input, textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  /* TEXTO */
+  .info{
+    font-size: 14px;
+  }
+  
+  /* ANIMACIÓN */
+  @keyframes aparecer{
+    from{
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
