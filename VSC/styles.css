@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f2e7d5; /* Tono beige para el fondo */
+    color: #3e2723; /* Marrón oscuro para el texto principal */
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url('fondo.jpg.jpeg') no-repeat center center; /* Fondo por defecto */
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background-image 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente para el nav */
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-btn {
+    margin: 0 10px;
+    padding: 10px 25px;
+    background: transparent;
+    color: #ffd700; /* Dorado para el texto del nav */
+    border: 1px solid #ffd700;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn.activo, .nav-btn:hover {
+    background: #ffd700;
+    color: black;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive; /* Fuente cursiva elegante */
+    font-size: 70px;
+    color: #ffd700; /* Dorado para el título */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    display: none;
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo muy suave y semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
+    border: 2px solid #ffd700; /* Borde dorado */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    animation: aparecer 0.8s ease;
+}
+
+.card.activo {
+    display: block;
+}
+
+.card h2 {
+    color: #ffd700; /* Dorado para los subtítulos */
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.card p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Sección Atractivos Principales */
+.attractions-card {
+    width: 650px; /* Tarjeta más ancha para la sección de atractivos */
+}
+
+.grid-atractivos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas para los atractivos */
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.atractivo-item {
+    text-align: center;
+    font-size: 14px;
+}
+
+.atractivo-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ffd700; /* Borde dorado fino */
+    margin-bottom: 10px;
+}
+
+.atractivos-footer {
+    font-size: 16px;
+    color: #ffd700;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Botón estilo Valle de Bravo */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #d32f2f, #f44336); /* Gradiente rojo-naranja intenso */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.7);
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

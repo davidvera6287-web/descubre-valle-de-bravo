@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visita Valle de Bravo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <button class="nav-btn" onclick="mostrar('nosotros', this, 'fondo.jpg.jpeg')">Nosotros</button>
+        <button class="nav-btn activo" onclick="mostrar('taxi', this, 'fondo.jpg.jpeg')">Taxi</button>
+        <button class="nav-btn" onclick="mostrar('atractivos', this, 'fondo.jpg.jpeg')">Atractivos</button>
+    </nav>
+</header>
+
+<section class="hero" id="hero-bg">
+    <div class="hero-content">
+        <h1>Visita Valle de Bravo</h1>
+        
+        <div class="contenedor">
+            <div id="nosotros" class="card">
+                <h2>🌄 Nosotros</h2>
+                <p>Ofrecemos emocionantes tours a cascadas, miradores, mariposas monarca y la estupa. Servicio cómodo y seguro.</p>
+                <a href="https://wa.me/527221253643?text=Hola,%20quisiera%20más%20información%20sobre%20los%20tours" class="btn">Solicitar Información</a>
+            </div>
+
+            <div id="taxi" class="card activo">
+                <h2>🚕 Taxi Seguro</h2>
+                <p>Servicio 24 horas, viajes seguros y certificados. Locales y nacionales.</p>
+                <a href="https://wa.me/527221253643?text=Hola,%20necesito%20un%20taxi" class="btn">Pedir por WhatsApp</a>
+            </div>
+
+            <div id="atractivos" class="card attractions-card">
+                <h2>Atractivos Principales</h2>
+                <div class="grid-atractivos">
+                    <div class="atractivo-item">
+                        <img src="La Peña 7043.jpeg.jpeg" alt="Mirador El Peñón">
+                        <p>Mirador El Peñón</p>
+                    </div>
+                    <div class="atractivo-item">
+                        <img src="La Stupa 7042.jpeg.jpeg" alt="La Gran Stupa">
+                        <p>La Gran Stupa</p>
+                    </div>
+                    <div class="atractivo-item">
+                        <img src="Cascada 6974.jpeg.jpeg" alt="Cascada Velo de Novia">
+                        <p>Cascada Velo de Novia</p>
+                    </div>
+                    <div class="atractivo-item">
+                        <img src="Parapente 6978.jpeg.jpeg" alt="Parapente Proteclio">
+                        <p>Parapente Proteclio</p>
+                    </div>
+                </div>
+                <div class="atractivos-footer">
+                    <p>BIENVENIDOS A VALLE DE BRAVO</p>
+                    <p>AVENTURA Y CULTURA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
